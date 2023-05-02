@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
-bbc_text = pd.read_csv(r"C:\Users\Sreya\Desktop\duk notes\semester 2\nlpir\bbc-text.txt")
+bbc_text = pd.read_csv(r"bbc-text.txt")
 bbc_text=bbc_text.rename(columns = {'text': 'News_Headline'}, inplace = False)
 bbc_text.category = bbc_text.category.map({'tech':0, 'business':1, 'sport':2, 'entertainment':3, 'politics':4})
 
